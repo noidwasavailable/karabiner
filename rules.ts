@@ -1,6 +1,6 @@
 import fs from "fs";
 import { KarabinerRules } from "./types";
-import { createHyperSubLayers, app, open, rectangle } from "./utils";
+import { createHyperSubLayers, app, open, rectangle, shell } from "./utils";
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
@@ -84,8 +84,8 @@ const rules: KarabinerRules[] = [
         "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
       ),
       z: app("zoom.us"),
-      // "M"essages
-      m: app("Texts"),
+      // "M"arkdown (Obsidian.md)
+      m: app("Obsidian"),
       f: app("Finder"),
       r: app("Texts"),
       // "i"Message
@@ -98,6 +98,21 @@ const rules: KarabinerRules[] = [
         "raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
       ),
     },
+
+    // TODO: This doesn't quite work yet.
+    // l = "Layouts" via Raycast's custom window management
+    // l: {
+    //   // Coding layout
+    //   c: shell`
+    //     open -a "Visual Studio Code.app"
+    //     sleep 0.2
+    //     open -g "raycast://customWindowManagementCommand?position=topLeft&relativeWidth=0.5"
+
+    //     open -a "Terminal.app"
+    //     sleep 0.2
+    //     open -g "raycast://customWindowManagementCommand?position=topRight&relativeWidth=0.5"
+    //   `,
+    // },
 
     // w = "Window" via rectangle.app
     w: {
@@ -226,32 +241,16 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      e: {
-        to: [
-          {
-            // Emoji picker
-            key_code: "spacebar",
-            modifiers: ["right_control", "right_command"],
-          },
-        ],
-      },
-      // Turn on Elgato KeyLight
-      y: {
-        to: [
-          {
-            shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 1, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
-          },
-        ],
-      },
-      h: {
-        to: [
-          {
-            shell_command: `curl -H 'Content-Type: application/json' --request PUT --data '{ "numberOfLights": 1, "lights": [ { "on": 0, "brightness": 100, "temperature": 215 } ] }' http://192.168.8.84:9123/elgato/lights`,
-          },
-        ],
-      },
+      e: open(
+        `raycast://extensions/thomas/elgato-key-light/toggle?launchType=background`
+      ),
       // "D"o not disturb toggle
-      d: open(`raycast://extensions/yakitrak/do-not-disturb/toggle`),
+      d: open(
+        `raycast://extensions/yakitrak/do-not-disturb/toggle?launchType=background`
+      ),
+      // "T"heme
+      t: open(`raycast://extensions/raycast/system/toggle-system-appearance`),
+      c: open("raycast://extensions/raycast/system/open-camera"),
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
@@ -272,6 +271,7 @@ const rules: KarabinerRules[] = [
       // Magicmove via homerow.app
       m: {
         to: [{ key_code: "f", modifiers: ["right_control"] }],
+        // TODO: Trigger Vim Easymotion when VSCode is focused
       },
       // Scroll mode via homerow.app
       s: {
@@ -303,6 +303,7 @@ const rules: KarabinerRules[] = [
 
     // r = "Raycast"
     r: {
+      c: open("raycast://extensions/thomas/color-picker/pick-color"),
       n: open("raycast://script-commands/dismiss-notifications"),
       l: open(
         "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
@@ -310,7 +311,6 @@ const rules: KarabinerRules[] = [
       e: open(
         "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
       ),
-      c: open("raycast://extensions/raycast/system/open-camera"),
       p: open("raycast://extensions/raycast/raycast/confetti"),
       a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
       s: open("raycast://extensions/peduarte/silent-mention/index"),
