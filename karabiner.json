@@ -15,9 +15,7 @@
                 "from": {
                   "key_code": "caps_lock",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "to": [
@@ -37,9 +35,27 @@
                 "from": {
                   "key_code": "right_command",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "f18"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Hyper Key (⌃⌥⇧⌘)",
+            "manipulators": [
+              {
+                "description": "Right Command -> Hyper Key",
+                "from": {
+                  "key_code": "right_command",
+                  "modifiers": {
+                    "optional": ["any"]
                   }
                 },
                 "to": [
@@ -70,19 +86,13 @@
                 "from": {
                   "key_code": "right_option",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "to": [
                   {
                     "key_code": "left_command",
-                    "modifiers": [
-                      "left_shift",
-                      "left_option",
-                      "left_control"
-                    ]
+                    "modifiers": ["left_shift", "left_option", "left_control"]
                   }
                 ],
                 "type": "basic"
@@ -103,9 +113,7 @@
                 "from": {
                   "key_code": "spacebar",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -172,9 +180,7 @@
                 "from": {
                   "key_code": "b",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "to_after_key_up": [
@@ -245,19 +251,14 @@
                 "to": [
                   {
                     "key_code": "n",
-                    "modifiers": [
-                      "left_command",
-                      "left_option"
-                    ]
+                    "modifiers": ["left_command", "left_option"]
                   }
                 ],
                 "type": "basic",
                 "from": {
                   "key_code": "s",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -279,9 +280,7 @@
                 "from": {
                   "key_code": "g",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -303,9 +302,7 @@
                 "from": {
                   "key_code": "o",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "to_after_key_up": [
@@ -383,9 +380,7 @@
                 "from": {
                   "key_code": "1",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -407,9 +402,7 @@
                 "from": {
                   "key_code": "w",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -431,9 +424,7 @@
                 "from": {
                   "key_code": "t",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -455,9 +446,7 @@
                 "from": {
                   "key_code": "d",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -478,9 +467,7 @@
                 "from": {
                   "key_code": "f",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -502,9 +489,7 @@
                 "from": {
                   "key_code": "g",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -526,9 +511,7 @@
                 "from": {
                   "key_code": "z",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -550,9 +533,7 @@
                 "from": {
                   "key_code": "c",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -574,9 +555,7 @@
                 "from": {
                   "key_code": "b",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -598,9 +577,7 @@
                 "from": {
                   "key_code": "k",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -622,9 +599,7 @@
                 "from": {
                   "key_code": "p",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -639,18 +614,14 @@
                 "to": [
                   {
                     "key_code": "grave_accent_and_tilde",
-                    "modifiers": [
-                      "left_command"
-                    ]
+                    "modifiers": ["left_command"]
                   }
                 ],
                 "type": "basic",
                 "from": {
                   "key_code": "tab",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -672,9 +643,7 @@
                 "from": {
                   "key_code": "right_shift",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "to_after_key_up": [
@@ -751,9 +720,7 @@
                 "from": {
                   "key_code": "0",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -774,9 +741,7 @@
                 "from": {
                   "key_code": "1",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -797,9 +762,7 @@
                 "from": {
                   "key_code": "2",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -820,9 +783,7 @@
                 "from": {
                   "key_code": "3",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -843,9 +804,7 @@
                 "from": {
                   "key_code": "4",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -866,9 +825,7 @@
                 "from": {
                   "key_code": "5",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -889,9 +846,7 @@
                 "from": {
                   "key_code": "6",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -913,9 +868,7 @@
                 "from": {
                   "key_code": "y",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -936,9 +889,7 @@
                 "from": {
                   "key_code": "r",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -959,9 +910,7 @@
                 "from": {
                   "key_code": "q",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -982,9 +931,7 @@
                 "from": {
                   "key_code": "e",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1005,9 +952,7 @@
                 "from": {
                   "key_code": "w",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1028,9 +973,7 @@
                 "from": {
                   "key_code": "a",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1051,9 +994,7 @@
                 "from": {
                   "key_code": "s",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1074,9 +1015,7 @@
                 "from": {
                   "key_code": "d",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1097,9 +1036,7 @@
                 "from": {
                   "key_code": "f",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1120,9 +1057,7 @@
                 "from": {
                   "key_code": "z",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1143,9 +1078,7 @@
                 "from": {
                   "key_code": "x",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1166,9 +1099,7 @@
                 "from": {
                   "key_code": "c",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1183,18 +1114,14 @@
                 "to": [
                   {
                     "key_code": "grave_accent_and_tilde",
-                    "modifiers": [
-                      "left_command"
-                    ]
+                    "modifiers": ["left_command"]
                   }
                 ],
                 "type": "basic",
                 "from": {
                   "key_code": "tab",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1216,9 +1143,7 @@
                 "from": {
                   "key_code": "slash",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "to_after_key_up": [
@@ -1295,9 +1220,7 @@
                 "from": {
                   "key_code": "1",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1318,9 +1241,7 @@
                 "from": {
                   "key_code": "2",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1341,9 +1262,7 @@
                 "from": {
                   "key_code": "3",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1364,9 +1283,7 @@
                 "from": {
                   "key_code": "4",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1387,9 +1304,7 @@
                 "from": {
                   "key_code": "5",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1410,9 +1325,7 @@
                 "from": {
                   "key_code": "6",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1433,9 +1346,7 @@
                 "from": {
                   "key_code": "a",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1456,9 +1367,7 @@
                 "from": {
                   "key_code": "d",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1484,9 +1393,7 @@
                 "from": {
                   "key_code": "left_arrow",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1557,9 +1464,7 @@
                 "from": {
                   "key_code": "right_arrow",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1626,9 +1531,7 @@
                 "from": {
                   "key_code": "r",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "to_after_key_up": [
@@ -1706,9 +1609,7 @@
                 "from": {
                   "key_code": "y",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1730,9 +1631,7 @@
                 "from": {
                   "key_code": "p",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1753,10 +1652,9 @@
                 "type": "basic",
                 "from": {
                   "key_code": "c",
+                  "key_code": "c",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1778,9 +1676,7 @@
                 "from": {
                   "key_code": "t",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1802,9 +1698,7 @@
                 "from": {
                   "key_code": "h",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1826,9 +1720,7 @@
                 "from": {
                   "key_code": "k",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1850,9 +1742,7 @@
                 "from": {
                   "key_code": "m",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1874,9 +1764,7 @@
                 "from": {
                   "key_code": "t",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "to_after_key_up": [
@@ -1953,9 +1841,7 @@
                 "from": {
                   "key_code": "p",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
@@ -1976,9 +1862,7 @@
                 "from": {
                   "key_code": "d",
                   "modifiers": {
-                    "optional": [
-                      "any"
-                    ]
+                    "optional": ["any"]
                   }
                 },
                 "conditions": [
