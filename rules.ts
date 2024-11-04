@@ -63,17 +63,18 @@ const rules: KarabinerRules[] = [
     b: {
       t: open("https://twitter.com"),
       // Quarterly "P"lan
-      p: open("https://qrtr.ly/plan"),
+      p: open("https://mxstbr.com/cal"),
       y: open("https://news.ycombinator.com"),
       f: open("https://facebook.com"),
       r: open("https://reddit.com"),
+      h: open("https://hashnode.com/draft"),
     },
     // o = "Open" applications
     o: {
       1: app("1Password"),
       g: app("Google Chrome"),
       c: app("Notion Calendar"),
-      v: app("Visual Studio Code"),
+      v: app("Zed"),
       d: app("Discord"),
       s: app("Slack"),
       e: app("Superhuman"),
@@ -84,10 +85,10 @@ const rules: KarabinerRules[] = [
         "notion://www.notion.so/stellatehq/7b33b924746647499d906c55f89d5026"
       ),
       z: app("zoom.us"),
-      // "M"arkdown (Obsidian.md)
-      m: app("Obsidian"),
+      // "M"arkdown (Reflect.app)
+      m: app("Reflect"),
+      r: app("Reflect"),
       f: app("Finder"),
-      r: app("Texts"),
       // "i"Message
       i: app("Texts"),
       p: app("Spotify"),
@@ -178,15 +179,6 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      d: {
-        description: "Window: Next display",
-        to: [
-          {
-            key_code: "right_arrow",
-            modifiers: ["right_control", "right_option", "right_command"],
-          },
-        ],
-      },
     },
 
     // s = "System"
@@ -251,6 +243,15 @@ const rules: KarabinerRules[] = [
       // "T"heme
       t: open(`raycast://extensions/raycast/system/toggle-system-appearance`),
       c: open("raycast://extensions/raycast/system/open-camera"),
+      // 'v'oice
+      v: {
+        to: [
+          {
+            key_code: "spacebar",
+            modifiers: ["left_option"],
+          },
+        ],
+      },
     },
 
     // v = "moVe" which isn't "m" because we want it to be on the left hand
@@ -325,6 +326,30 @@ const rules: KarabinerRules[] = [
       ),
     },
   }),
+  {
+    description: "Change Backspace to Spacebar when Minecraft is focused",
+    manipulators: [
+      {
+        type: "basic",
+        from: {
+          key_code: "delete_or_backspace",
+        },
+        to: [
+          {
+            key_code: "spacebar",
+          },
+        ],
+        conditions: [
+          {
+            type: "frontmost_application_if",
+            file_paths: [
+              "^/Users/mxstbr/Library/Application Support/minecraft/runtime/java-runtime-gamma/mac-os-arm64/java-runtime-gamma/jre.bundle/Contents/Home/bin/java$",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 fs.writeFileSync(
